@@ -1,0 +1,11 @@
+*:80 {
+    root /www
+    browse
+}
+
+*:443 {
+    root /www
+    tls self_signed
+
+    browse
+}
