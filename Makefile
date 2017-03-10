@@ -18,6 +18,6 @@ define run
 	docker run $(RUN_FLAG) --name $(APP_NAME) \
 		-p 80:80 \
 		-p 443:443 \
-		-v $(pwd)/www:/www \
+		-v ${PWD}/www:/www \
 		$(APP_NAME)
 endef
